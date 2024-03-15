@@ -34,6 +34,6 @@ jobs:  # workflow中的job
         uses: docker/build-push-action@v4 # docker build & push
         with:
           context: .
-          file: ./Dockerfile
+          file: ./DockerFile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
