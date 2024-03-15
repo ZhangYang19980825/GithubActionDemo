@@ -36,4 +36,4 @@ jobs:  # workflow中的job
           context: .
           file: ./DockerFile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: zjwo/actions_build_springboot
