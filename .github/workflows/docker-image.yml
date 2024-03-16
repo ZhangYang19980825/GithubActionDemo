@@ -17,6 +17,12 @@ jobs:  # workflow中的job
       - name: Check out the repo
         uses: actions/checkout@v2   # 官方的action，获取代码
 
+      - name: Set up JDK  # 设置JDK
+        uses: actions/setup-java@master  # 使用GitHub官方的setup-java action，用于安装和配置Java环境
+        with:
+          java-version: 17
+          distribution: "adopt"
+          cache: maven
           # 编译打包
       - name: Build with Maven
         run: mvn package -Dmaven.test.skip=true
