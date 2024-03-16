@@ -5,7 +5,7 @@ FROM openjdk:8
 MAINTAINER zhangyang
 
 # 把可执行 jar 包复制到基础镜像的根目录下
-ADD GithubActionDemo-0.0.1-SNAPSHOT.jar /GithubActionDemo-0.0.1-SNAPSHOT.jar
+ADD target/GithubActionDemo-0.0.1-SNAPSHOT.jar /GithubActionDemo-0.0.1-SNAPSHOT.jar
 
 # 镜像要暴露的端口，如要使用端口，在执行 docker run 命令时使用 -p 生效
 EXPOSE 8989
