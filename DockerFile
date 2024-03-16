@@ -1,5 +1,5 @@
-# 基础镜像 jdk1.8
-FROM openjdk:8
+
+FROM openjdk:17
 
 # 作者
 MAINTAINER zhangyang
