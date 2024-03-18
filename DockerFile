@@ -8,7 +8,7 @@ MAINTAINER zhangyang
 ADD target/GithubActionDemo-0.0.1-SNAPSHOT.jar /GithubActionDemo-0.0.1-SNAPSHOT.jar
 
 # 镜像要暴露的端口，如要使用端口，在执行 docker run 命令时使用 -p 生效
-EXPOSE 8989
+EXPOSE 8080
 
 # 在镜像运行为容器后执行的命令
 ENTRYPOINT ["java", "-jar","/GithubActionDemo-0.0.1-SNAPSHOT.jar"]
