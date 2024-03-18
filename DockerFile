@@ -11,4 +11,4 @@ ADD target/GithubActionDemo-0.0.1-SNAPSHOT.jar /GithubActionDemo-0.0.1-SNAPSHOT.
 EXPOSE 8989
 
 # 在镜像运行为容器后执行的命令
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/GithubActionDemo-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar","/GithubActionDemo-0.0.1-SNAPSHOT.jar"]
